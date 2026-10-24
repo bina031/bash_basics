@@ -14,3 +14,13 @@ fi
 
 # exercise: write a script that prints whether today is
 # the weekend or not
+# Check if today is Saturday or Sunday
+day=$(date +%u)
+
+if [ "$day" -eq 6 ]; then
+    echo "Happy Saturday! It's the weekend!"
+elif [ "$day" -eq 7 ]; then
+    echo "Happy Sunday! It's the weekend!"
+else
+    echo "It's not the weekend yet!"
+fi
